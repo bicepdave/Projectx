@@ -63,4 +63,4 @@ stages:
         azureSubscription: 'mine'
         appType: 'webApp'
         WebAppName: 'projectxxxxxx'
-        packageForLinux: '$(System.DefaultWorkingDirectory)/drop/*.zip'
+        packageForLinux: '$(System.ArtifactsDirectory)/drop/*.zip'
