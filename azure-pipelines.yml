@@ -59,7 +59,7 @@ stages:
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'Azure Pass - Sponsorship(501dca37-c84d-4939-96be-b6c113a26721)'
+        azureSubscription: 'mine'
         appType: 'webApp'
-        WebAppName: 'kskqslkqkqwlqwk'
-        packageForLinux: '$(System.ArtifactsDirectory)/drop/*.zip'
+        WebAppName: 'projectxxxxxx'
+        packageForLinux: '$(System.DefaultWorkingDirectory)/drop/*.zip'
