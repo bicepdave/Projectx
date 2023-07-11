@@ -11,7 +11,7 @@ stages:
   - job: Build
 
     pool:
-      vmImage: 'windows-latest'
+      name: good
 
     variables:
       solution: '**/*.sln'
@@ -45,7 +45,7 @@ stages:
   jobs:
   - job: Deploy
     pool:
-      vmImage: 'vs2017-win2016'
+      name: good
 
     steps:
 
