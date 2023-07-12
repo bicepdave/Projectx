@@ -34,4 +34,10 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
-#leuk
+- task: DownloadBuildArtifacts@1
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'drop'
+    downloadPath: '$(System.ArtifactsDirectory)'
+
